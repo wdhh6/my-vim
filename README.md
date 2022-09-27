@@ -32,6 +32,10 @@ when you enter a project, please execute 'ct' to generate the tags;
 ### open the current dir
     F3
     
+### Code completion
+    use tag completion:ctrl + x + o 
+    use the keyword of the current file: ctrl + n
+    
 
     
     
