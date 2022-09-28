@@ -212,12 +212,12 @@ let Tlist_Close_On_Select 				= 1
 let tlist_make_settings  = 'make;m:makros;t:targets'
 let tlist_qmake_settings = 'qmake;t:SystemVariables'
 
-nnoremap gw :grep -r -w <cword> * <CR>
-nnoremap gr :grep -r -e '\-><cword>' -e '\\.<cword>' *<CR>
+nnoremap gw :grep --exclude-from tags -r -w <cword> * --exclude=tags --exclude=*.o<CR>
+nnoremap gr :grep --exclude-from tags -r -e '\-><cword>' -e '\\.<cword>' * --exclude=tags --exclude=*.o<CR>
 au BufWritePost *.c,*.cpp,*.h call UpdateCtags()
 nnoremap zj zfi{
 nnoremap zk zf%
-vnoremap gw y:grep -r -E '<C-R>0' *<CR>
+vnoremap gw y:grep -r -E '<C-R>0' * --exclude=tags --exclude=*.o<CR>
 
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
