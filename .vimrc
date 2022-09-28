@@ -51,6 +51,7 @@ endif " has("autocmd")
 "    "set csverb
 "endif
 
+set t_Co=256
 
 set ts=4
 set nocompatible
@@ -226,3 +227,4 @@ let g:cpp_experimental_simple_template_highlight = 1
 let g:cpp_experimental_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 
+nnoremap <leader>t :LeaderfTag<CR>

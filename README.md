@@ -20,7 +20,7 @@ when you enter a project, please execute 'ct' to generate the tags;
     go to definiton:ctrl + ]
     go back: ctrl + t
     
- ### go to references
+### go to references
     go to the member in struction reference:gr
     got to the function reference: gw
     
@@ -35,7 +35,9 @@ when you enter a project, please execute 'ct' to generate the tags;
 ### Code completion
     use tag completion:ctrl + x + o 
     use the keyword of the current file: ctrl + n
-    
+
+### tag navigation
+    press \t, then put the function you want to see fuzzly, Ctrl + j or Ctrl + k to choose what you want, enter it. 
 
     
     

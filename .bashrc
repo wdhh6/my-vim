@@ -21,7 +21,7 @@ alias pst="ps -eLf"
 alias psa="ps auxww"
 alias cs='cscope -bqk'
 #alias ct='ctags -R --file-scope=yes --langmap=c:+.h --langmap=c++:+.inl --languages=c,c++ --links=yes --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q'
-alias ct='ctags -R --c++-kinds=+px --languages=c,c++ --langmap=c++:+.inl --fields=+iaS --extra=+q  --exclude=depend/*'
+alias ct='ctags -R --c++-kinds=+px  --langmap=c++:+.inl --fields=+afmikKlnsStz --extra=+q $PWD' 
 #alias gdb='cgdb'
 
 #PS1='[\e[0;36m\u@\e[0;36m\h\e[0m \W]\$ '
